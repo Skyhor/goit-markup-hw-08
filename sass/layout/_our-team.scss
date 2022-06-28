@@ -1,0 +1,48 @@
+.team-section {
+    background-color: #F5F4FA;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.team__list {
+    flex-basis: calc((100% - 120px)/ 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        &:not(:nth-child(4n)) {
+            margin-right: 30px;
+            }
+}
+
+.team__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: none;
+    background-color: var(--white-color);
+}
+
+.team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+
+.team__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--contact-color)
+}
+
