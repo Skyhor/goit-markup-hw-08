@@ -1,10 +1,10 @@
-.social-link {
+.social {
     display: flex;
     justify-content: center;
 
 }
 
-.social-link__list {
+.social__item {
     cursor: pointer;
 
    &:not(:last-child) {
@@ -14,7 +14,7 @@
 
 
 
-.social-link__link {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
 }
 
 
-.list-social-link {
+.social-icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -40,8 +40,8 @@
     fill: var(--white-color);
     }
 
-.social-link__link:hover &,
-.social-link__link:focus & {
+.social__link:hover &,
+.social__link:focus & {
     fill: var(--white-color);
 }
 }

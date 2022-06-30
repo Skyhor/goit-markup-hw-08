@@ -18,6 +18,11 @@ ol {
     margin-bottom: 0;
     margin-left: 0;
     padding: unset;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 ::after,
@@ -29,13 +34,8 @@ img {
     display: block;
 }
 
-.list {
-    list-style: none;
-}
 
-.link {
-    text-decoration: none;
-}
+
 
 body {
     font-family: 'Roboto', sans-serif;
