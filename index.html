@@ -68,10 +68,44 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-button" data-menu-open>
+          <svg width="40px" height="40px" class="mobile-menu-button__icon">
+            <use href="./img/icons.svg/symbol-defs.svg#icon-tel-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- Modal-mobile -->
+    <div class="modal-mobile" data-menu>
+      <div class="container modal-mobile__conteiner">
+        <button
+          type="button"
+          class="modal-mobile__close-button"
+          data-menu-close
+        >
+          <svg class="modal-mobile__close-icon" width="40px" height="40px">
+            <use href="./img/icons.svg/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="modal-mobile__menu">
+          <li class="modal-mobile__item"><a href="">Студия</a></li>
+          <li class="modal-mobile__item"><a href=""></a>Портфолио</li>
+          <li class="modal-mobile__item"><a href=""></a>Контакты</li>
+        </ul>
+        <ul>
+          <li><a href="">+38 096 111 11 11</a></li>
+          <li><a href="">info@devstudio.com</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Hero -->
-    <main>
+    <!-- <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -80,7 +114,7 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
     <!-- Advantages -->
     <!-- <section class="section">
         <div class="container">
@@ -994,6 +1028,7 @@
       </div>
     </div> -->
     <!-- Modal -->
+    <script src="./js/menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

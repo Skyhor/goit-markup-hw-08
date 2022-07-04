@@ -1,22 +1,40 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+
+}
+.menu{
+    display: none;
+}
+.menu-nav{
+    display: none;
+}
+.mobile-menu-button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+
+.mobile-menu-button__icon{
+    fill: var(--black-color);
+}
+
 // .header {
 //     border-bottom: 1px solid #ECECEC;
 // }
 
-// .header__container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
 
-// }
 
 // .navigation {
 //     display: flex;
 //     align-items: center;
 // }
 
-// .logo__black {
-//     color: var(--black-color);
-// }
+
 
 
 // .menu {
