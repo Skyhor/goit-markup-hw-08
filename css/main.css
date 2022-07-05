@@ -61,7 +61,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -70,7 +69,7 @@ body {
 
 @media screen and (max-width: 766px) {
   .container {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 767px) {
@@ -680,7 +679,7 @@ textarea {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  background-color: teal;
+  background-color: red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -739,6 +738,11 @@ textarea {
     font-size: 44px;
   }
 }
+@media screen and (max-width: 767px) {
+  .advantages__box {
+    width: 450px;
+  }
+}
 .advantages__box {
   display: flex;
   height: 120px;
@@ -770,6 +774,10 @@ textarea {
   .advantages {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .advantages__box {
+    width: 270px;
   }
 
   .advantages__item {

@@ -1,4 +1,8 @@
-
+@media screen and(max-width:767px) {
+    .advantages__box{
+width: 450px;
+    }
+}
 .advantages__box {
         display: flex;
         height: 120px;
@@ -34,7 +38,9 @@
                 flex-wrap: wrap;
         
             }
-        
+        .advantages__box{
+            width: 270px;
+        }
             .advantages__item {
                 flex-basis: calc((100% - 60px)/ 2);
         
