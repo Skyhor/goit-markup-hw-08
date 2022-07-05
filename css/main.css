@@ -664,13 +664,11 @@ textarea {
 @media screen and (max-width: 767px) {
   .hero {
     padding: 118px 0px;
-    max-width: 100%;
+    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/mobile-mg.jpg);
   }
 }
 .hero {
-  margin-left: auto;
-  margin-right: auto;
   background-color: #C4C4C4;
   background-size: cover;
   background-position: center;
@@ -712,10 +710,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero {
-    margin-left: auto;
-    margin-right: auto;
     padding: 118px 0px;
-    max-width: 100%;
+    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/tablet-img.jpg);
   }
 }
