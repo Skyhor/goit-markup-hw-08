@@ -1,11 +1,17 @@
+@media screen and(max-width: 767px) {
+    padding: 118px 0px;
+        max-width: 767px;
+  .hero{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../img/Hero/mobile-mg.jpg);
+  }
+}
 .hero {
     margin-left: auto;
     margin-right: auto;
-    padding: 118px 0px;
-    max-width: 767px;
+    
     background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../img/Hero/mobile-mg.jpg);
+   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,6 +55,15 @@
     &:focus {
         background-color: #188CE8
     }
+}
+
+@media screen and(min-width: 768px) {
+   .hero{
+        background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../img/Hero/tablet-img.jpg);
+   }
+            
 }
 
 
