@@ -1,12 +1,29 @@
-.section__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+@media screen and(max-width:767px) {
+    .section__title{
+font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    box-sizing: border-box;
-    margin-bottom: 50px;
+    padding-bottom: 30px;
+    }
+        
+       
 }
+
+
+
+// .section__title {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 42px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     box-sizing: border-box;
+//     margin-bottom: 50px;
+// }
+
+
 
 
 .foter-title {
