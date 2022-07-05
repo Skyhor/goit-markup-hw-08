@@ -30,12 +30,12 @@
           </a>
           <ul class="menu">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link">Студия</a>
+              <a href="./index.html" class="menu__link menu-link__current"
+                >Студия</a
+              >
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link menu-link__current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="menu__link">Портфолио</a>
             </li>
             <li class="menu__item">
               <a href="" class="menu__link">Контакты</a>
@@ -58,7 +58,11 @@
             >
           </li>
           <li class="menu-nav__item">
-            <a href="tel:+380961111111" class="menu-nav__link"
+            <a
+              href="tel:+380961111111"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="menu-nav__link"
               ><svg class="menu-nav__icon" width="10" height="16">
                 <use
                   href="./img/icons.svg/symbol-defs.svg#icon-header-tel"
@@ -68,11 +72,75 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-button" data-menu-open>
+          <svg width="40px" height="40px" class="mobile-menu-button__icon">
+            <use href="./img/icons.svg/symbol-defs.svg#icon-tel-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- Modal-mobile -->
+    <div class="modal-mobile" data-menu>
+      <div class="container modal-mobile__conteiner">
+        <button
+          type="button"
+          class="modal-mobile__close-button"
+          data-menu-close
+        >
+          <svg class="modal-mobile__close-icon" width="40px" height="40px">
+            <use href="./img/icons.svg/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="modal-mobile__menu">
+          <li class="modal-mobile__item">
+            <a href="/" class="modal-mobile__link">Студия</a>
+          </li>
+          <li class="modal-mobile__item">
+            <a href="./portfolio.html" class="modal-mobile__link">Портфолио</a>
+          </li>
+          <li class="modal-mobile__item">
+            <a href="" class="modal-mobile__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="modal-mobile__contacts">
+          <li class="modal-mobile__contacts-item">
+            <a
+              href="tel:+380961111111"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="modal-mobile__contacts-link modal-mobile__contacts-link-akcent"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="modal-mobile__contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="modal-mobile__contacts-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="modal-mobile__social">
+          <li class="modal-mobile__social-item">
+            <a href="" class="modal-mobile__social-link">Instagram</a>
+          </li>
+          <li class="modal-mobile__social-item">
+            <a href="" class="modal-mobile__social-link">Twitter</a>
+          </li>
+          <li class="modal-mobile__social-item">
+            <a href="" class="modal-mobile__social-link">Facebook</a>
+          </li>
+          <li class="modal-mobile__social-item">
+            <a href="" class="modal-mobile__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!--Content  -->
     <main>
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio-filter">
@@ -98,9 +166,9 @@
               <button type="button" class="portfolio-hero-button">
                 Маркетинг
               </button>
-            </li>
+             </li> -->
             <!-- Card -->
-          </ul>
+          <!-- </ul>
           <ul class="list portfolio-content">
             <li class="portfolio-header-photo">
               <a href="" class="portfolio-link">
@@ -323,10 +391,10 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+      </section> 
+    </main> -->
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-nav">
           <a href="/" lang="en" class="logo">
@@ -422,6 +490,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
