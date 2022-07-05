@@ -113,17 +113,24 @@ body {
     position: relative;
     padding: 48px 0;
   }
-
-  .modal-mobile__close-button {
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    line-height: 0;
-    top: 10px;
-    right: 15px;
-  }
 }
+.modal-mobile__close-icon {
+  fill: black;
+}
+
+.modal-mobile__close-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  top: 10px;
+  right: 15px;
+}
+.modal-mobile__close-button .modal-mobile__close-icon:focus, .modal-mobile__close-button .modal-mobile__close-icon:hover, .modal-mobile__close-button {
+  fill: var(--accent-color);
+}
+
 .modal-mobile__menu {
   padding-left: 25px;
 }
@@ -477,9 +484,6 @@ textarea {
 .mobile-menu-button__icon {
   fill: var(--black-color);
 }
-.mobile-menu-button__icon .mobile-menu-button:focus, .mobile-menu-button__icon {
-  fill: var(--accent-color);
-}
 
 @media screen and (max-width: 767px) {
   .mobile-menu-button {
@@ -487,6 +491,9 @@ textarea {
     background-color: transparent;
     padding: 0;
     line-height: 0;
+  }
+  .mobile-menu-button .mobile-menu-button__icon:focus, .mobile-menu-button .mobile-menu-button__icon:hover, .mobile-menu-button {
+    fill: var(--accent-color);
   }
 
   .menu {

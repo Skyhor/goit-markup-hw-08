@@ -27,6 +27,12 @@
             padding: 48px 0;
     
         }
+
+        
+    }
+        .modal-mobile__close-icon{
+            fill: black;
+        }
     
         .modal-mobile__close-button {
             position: absolute;
@@ -36,8 +42,16 @@
             line-height: 0;
             top: 10px;
             right: 15px;
+
+
+            .modal-mobile__close-icon:focus,&
+            .modal-mobile__close-icon:hover,&
+            {
+                fill: var(--accent-color);
+            }
         }
-}
+
+
 
 .modal-mobile__menu{
     

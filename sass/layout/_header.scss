@@ -10,10 +10,7 @@
 .mobile-menu-button__icon{
     fill: var(--black-color);
 
-    .mobile-menu-button:focus,&
-         {
-            fill: var(--accent-color);
-        }
+   
 }
 @media screen and (max-width: 767px) {
 
@@ -23,7 +20,11 @@
             padding: 0;
             line-height: 0;
 
-          
+        .mobile-menu-button__icon:focus,&
+        .mobile-menu-button__icon:hover,&
+        {
+            fill: var(--accent-color);
+        }
         }
 .menu {
         display: none;
