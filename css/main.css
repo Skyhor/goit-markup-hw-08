@@ -122,17 +122,46 @@ body {
     right: 15px;
   }
 }
+.modal-mobile__menu {
+  padding-left: 25px;
+}
+
 .modal-mobile__item {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 .modal-mobile__link {
   color: #212121;
 }
 .modal-mobile__link:focus {
+  color: var(--accent-color);
+}
+
+.modal-mobile__contacts {
+  margin-top: 302px;
+  margin-bottom: 64px;
+}
+
+.modal-mobile__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.modal-mobile__contacts-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+}
+
+.modal-mobile__contacts-link-akcent {
+  font-size: 34px;
+  line-height: 40px;
   color: var(--accent-color);
 }
 
