@@ -673,14 +673,17 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    padding: 118px 60px;
+    padding: 118px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/mobile-mg.jpg);
   }
 }
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   background-color: teal;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero__title {
@@ -768,24 +771,24 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
-}
-.advantages__item {
-  flex-basis: calc((100% - 60px) / 2);
-}
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
-}
 
-.advantages__title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-align: left;
-}
+  .advantages__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
+  .advantages__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .advantages__item {
     flex-basis: calc((100% - 120px) / 4);

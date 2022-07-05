@@ -32,27 +32,31 @@
         .advantages {
                 display: flex;
                 flex-wrap: wrap;
+        
+            }
+        
+            .advantages__item {
+                flex-basis: calc((100% - 60px)/ 2);
+        
+        
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+        
+            }
+        
+            .advantages__title {
+                margin-bottom: 10px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                text-align: left;
+            }
             }
 
-        }
-        .advantages__item {
-            flex-basis: calc((100% - 60px)/ 2);
-            
-
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
-
-        }
-        .advantages__title {
-            margin-bottom: 10px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            text-align: left;
-        }
+        
 
         @media screen and(min-width:1200px) {
             .advantages__item {
