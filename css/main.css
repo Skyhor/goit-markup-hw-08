@@ -71,8 +71,6 @@ body {
 @media screen and (max-width: 766px) {
   .container {
     width: 100%;
-    margin: 0 auto;
-    padding: 16px 15px;
   }
 }
 @media screen and (min-width: 767px) {
@@ -86,9 +84,16 @@ body {
   }
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media screen and (min-width: 767px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .modal-mobile {
     position: fixed;
@@ -488,6 +493,11 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+  .header__container {
+    margin: 0 auto;
+    padding: 16px 15px;
+  }
+
   .mobile-menu-button {
     border: none;
     background-color: transparent;
@@ -672,7 +682,6 @@ textarea {
   background-color: khaki;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .hero__title {
@@ -728,20 +737,8 @@ textarea {
     font-size: 44px;
   }
 }
-.advantages {
-  display: flex;
-}
-
-.advantages__item {
-  flex-basis: calc((100% - 120px) / 4);
-}
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .advantages__box {
   display: flex;
-  width: 270px;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -756,6 +753,7 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__text {
@@ -763,6 +761,7 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+  margin-bottom: 30px;
 }
 
 .section__no-padding-top {

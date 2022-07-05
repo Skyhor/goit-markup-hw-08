@@ -1,40 +1,69 @@
-.advantages {
-    display: flex;
-}
 
-
-
-.advantages__item {
-    flex-basis: calc((100% - 120px)/ 4);
-
-    &:not(:last-child) {
-        margin-right: 30px;
+.advantages__box {
+        display: flex;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
     }
-}
 
-.advantages__box{
-    display: flex;
-    width: 270px;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
-}
+        .advantages__title {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+   .advantages__text {
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     color: var(--contact-color);
+     margin-bottom: 30px;
+     
+     }
+
+// .advantages {
+//     display: flex;
+// }
 
 
-.advantages__title {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 
-.advantages__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--contact-color)
-}
+// .advantages__item {
+//     flex-basis: calc((100% - 120px)/ 4);
+
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+// .advantages__box{
+//     display: flex;
+//     width: 270px;
+//     height: 120px;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #F5F4FA;
+//     margin-bottom: 30px;
+// }
+
+
+// .advantages__title {
+//     margin-bottom: 10px;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+// }
+
+// .advantages__text {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: var(--contact-color)
+// }
