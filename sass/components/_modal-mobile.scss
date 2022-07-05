@@ -72,10 +72,13 @@ font-weight: 500;
     
         color: #212121;
 
-    &:focus {
-            color: var(--accent-color);
-        }
+  
 }
+.modal-mobile__link-current{
+position: relative;
+    color: var(--accent-color);
+}
+
 
 .modal-mobile__contacts{
     margin-top: 302px;
