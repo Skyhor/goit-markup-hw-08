@@ -674,12 +674,11 @@ textarea {
 @media screen and (max-width: 767px) {
   .hero {
     padding: 118px 0px;
-    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/mobile-mg.jpg);
   }
 }
 .hero {
-  background-color: khaki;
+  background-color: hotpink;
   background-size: cover;
   background-position: center;
 }
