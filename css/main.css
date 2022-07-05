@@ -62,20 +62,20 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 766px) {
   .container {
-    width: 100%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 767px) {
   .container {
-    width: 100%;
+    width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -89,7 +89,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .section {
     padding: 94px 0;
   }
@@ -673,12 +673,12 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    padding: 118px 0px;
+    padding: 118px 60px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/mobile-mg.jpg);
   }
 }
 .hero {
-  background-color: hotpink;
+  background-color: teal;
   background-size: cover;
   background-position: center;
 }
@@ -763,6 +763,37 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.advantages__item {
+  flex-basis: calc((100% - 60px) / 2);
+}
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .section__no-padding-top {
   padding-top: 0;
 }
