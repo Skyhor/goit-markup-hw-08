@@ -64,6 +64,8 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 766px) {
@@ -475,6 +477,9 @@ textarea {
 .mobile-menu-button__icon {
   fill: var(--black-color);
 }
+.mobile-menu-button__icon .mobile-menu-button:focus, .mobile-menu-button__icon {
+  fill: var(--accent-color);
+}
 
 @media screen and (max-width: 767px) {
   .mobile-menu-button {
@@ -496,6 +501,14 @@ textarea {
   .menu-nav {
     margin-left: 82px;
     padding: 15px 0;
+  }
+
+  .menu-nav__item {
+    fill: currentColor;
+    margin-bottom: 10px;
+  }
+  .menu-nav__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -563,14 +576,6 @@ textarea {
     background-color: #188CE8;
   }
 
-  .menu-nav__item {
-    fill: currentColor;
-    margin-bottom: 10px;
-  }
-  .menu-nav__item:not(:last-child) {
-    margin-right: 50px;
-  }
-
   .menu-nav__link {
     align-items: center;
     display: flex;
@@ -592,22 +597,9 @@ textarea {
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
-    border-bottom: 1px solid #ECECEC;
-  }
-
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-
   .menu {
     margin-left: 93px;
     display: flex;
-  }
-
-  .menu__item:not(:last-child) {
-    margin-right: 50px;
   }
 
   .menu__link {
@@ -646,7 +638,6 @@ textarea {
   .menu-nav__item {
     fill: currentColor;
     padding: 32px 0;
-    margin-bottom: 0;
   }
   .menu-nav__item:not(:last-child) {
     margin-right: 50px;
@@ -664,20 +655,28 @@ textarea {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0px;
-  max-width: 1600px;
+  padding: 118px 0px;
+  max-width: 767px;
   background-color: #C4C4C4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Hero/Img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/mobile-mg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../../img/Hero/img@2x.jpg");
-  }
+.hero__title {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
+
 .hero__button {
   margin-left: auto;
   margin-right: auto;
@@ -697,19 +696,6 @@ textarea {
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #188CE8;
-}
-
-.hero__title {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
 }
 
 .advantages {

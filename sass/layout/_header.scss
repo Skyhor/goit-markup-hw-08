@@ -9,6 +9,11 @@
 
 .mobile-menu-button__icon{
     fill: var(--black-color);
+
+    .mobile-menu-button:focus,&
+         {
+            fill: var(--accent-color);
+        }
 }
 @media screen and (max-width: 767px) {
 
@@ -17,6 +22,8 @@
             background-color: transparent;
             padding: 0;
             line-height: 0;
+
+          
         }
 .menu {
         display: none;
@@ -32,6 +39,15 @@
             margin-left: 82px;
             padding: 15px 0;
         }
+
+                .menu-nav__item {
+                    fill: currentColor;
+                    margin-bottom: 10px;
+        
+                    &:not(:last-child) {
+                        margin-right: 50px;
+                    }
+                }
 }
 
 @media screen and (min-width: 768px){
@@ -110,14 +126,7 @@
 
 
 
-.menu-nav__item{
-    fill: currentColor;
-    margin-bottom: 10px;
 
-    &:not(:last-child) {
-    margin-right: 50px;
-    }
-}
 .menu-nav__link{
     align-items: center;
         display: flex;
@@ -142,16 +151,11 @@
 
 // Desktop
 @media screen and(min-width:1200px ){
-    .header {
-            border-bottom: 1px solid #ECECEC;
-        }
     
     
     
-        .navigation {
-            display: flex;
-            align-items: center;
-        }
+    
+      
     
     
     
@@ -161,9 +165,7 @@
             display: flex;
         }
     
-        .menu__item:not(:last-child) {
-            margin-right: 50px;
-        }
+    
     
         .menu__link {
             position: relative;
@@ -211,12 +213,13 @@
         .menu-nav__item{
             fill: currentColor;
             padding: 32px 0;
-            margin-bottom: 0;
+
+            &:not(:last-child) {
+                    margin-right: 50px;
+                }
            
             
-            &:not(:last-child) {
-            margin-right: 50px;
-            }
+           
         }
     
         .menu-nav__link:hover,
