@@ -78,6 +78,24 @@
                     margin-right: 10px;
                 }
 }
+.menu-link__current {
+    position: relative;
+    color: var(--accent-color);
+
+    &::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            border-radius: 2px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #188CE8;
+        }
+}
+.menu-nav{
+    margin-left: 84px;
+}
  
 
 }
