@@ -925,15 +925,19 @@ textarea {
 }
 .clients {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.client__item:not(:last-child) {
+.client__item:not(:nth-child(2n)) {
   margin-right: 30px;
+}
+.client__item:not(:nth-child(n+5)) {
+  margin-bottom: 30px;
 }
 
 .client__link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -946,13 +950,11 @@ textarea {
   border-color: var(--accent-color);
 }
 
-.clients__logo {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 479px) {
+  .client__item:not(:nth-child(n+6)) {
+    margin-bottom: 30px;
+  }
 }
-.client__link:hover .clients__logo, .client__link:focus .clients__logo {
-  fill: var(--accent-color);
-}
-
 .footer {
   padding: 60px 0;
   background: #2F303A;
