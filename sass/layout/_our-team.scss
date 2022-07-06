@@ -33,22 +33,34 @@
          color: var(--contact-color)
      }
 
-     @media screen and(min-width:768px)
-      {
-      .team__item{
-        flex-basis: calc((100% - 60px)/ 2);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-     &:nth-child(2n){
-        margin-left: 30px;
-           }
-       &:nth-child(-n+2){
-        margin-bottom: 30px;
-       }
-      }
+     @media screen and(min-width:767px) and(max-width:1199px) {
+        .team__item {
+                flex-basis: calc((100% - 60px)/ 2);
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                    0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+        
+                &:nth-child(2n) {
+                    margin-left: 30px;
+                }
+        
+                &:nth-child(-n+2) {
+                    margin-bottom: 30px;
+                }
      }
+     }
+     @media screen and(min-width:1200px) {
+        .team__item {
+            flex-basis: calc((100% - 120px)/ 4);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+                &:not(:nth-child(4n)) {
+                    margin-right: 30px;
+                    }
+        }
+        }
 
 // .section__other-background {
 //     background-color: #F5F4FA;
