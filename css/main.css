@@ -878,6 +878,10 @@ textarea {
   justify-content: center;
 }
 
+.team__item {
+  margin-bottom: 30px;
+}
+
 .team__card {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -903,6 +907,15 @@ textarea {
   color: var(--contact-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 120px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .team__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .team__item {
     flex-basis: calc((100% - 60px) / 2);
@@ -913,15 +926,6 @@ textarea {
   }
   .team__item:nth-child(-n+2) {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    flex-basis: calc((100% - 120px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  .team__item:not(:nth-child(4n)) {
-    margin-right: 30px;
   }
 }
 .client__link {
@@ -974,6 +978,14 @@ textarea {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .client__item:not(:nth-child(-n+3)) {
+    margin-right: 30px;
+  }
+  .client__item:not(:nth-child(2n)) {
+    margin-bottom: 30px;
+  }
+}
 .footer {
   padding: 60px 0;
   background: #2F303A;
