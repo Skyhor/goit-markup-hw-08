@@ -32,7 +32,7 @@
          }
 
 
-     @media screen and(min-width:768px) {
+     @media screen and(min-width:768px){
         .advantages {
                 display: flex;
                 flex-wrap: wrap;
@@ -69,10 +69,14 @@
             .advantages__item {
                     flex-basis: calc((100% - 120px)/ 4);
             
-                    &:not(:last-child) {
-                        margin-right: 30px;
+                    &:not(:first-child) {
+                        margin-left: 30px;
                     }
                 }
+
+            .advantages__text {
+                width: 270px;
+            }
         }
 // .advantages {
 //     display: flex;
