@@ -9,25 +9,48 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
+    
     @media screen and(max-width: 767px) {
-            background-image:linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                url(../../img/Hero/mobile-mg.jpg) ; 
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../img/Hero/mobile-img.jpg);
             padding: 118px 0px;
         }
-
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                        url(../../img/Hero/mobile-img@2x.jpg);
-                }
-
-                @media screen and(min-width:768px) {    
-                    
-                }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../img/Hero/mobile-img@2x.jpg);
+        }
+    
+        @media screen and(min-width:768px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../img/Hero/tablet-img.jpg);
+            padding: 118px 0px;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../img/Hero/tablet-img@2x.jpg);
+        }
+    
+        @media screen and(min-width:768px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../img/Hero/desktop-img.jpg);
+            padding: 118px 0px;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../img/Hero/desktop-img@2x.jpg);
+        }
 }
 
 
