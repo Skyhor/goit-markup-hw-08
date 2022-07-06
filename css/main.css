@@ -691,7 +691,6 @@ textarea {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Hero/mobile-img@2x.jpg);
   }
 }
-
 .hero__title {
   max-width: 360px;
   margin-left: auto;
@@ -839,6 +838,7 @@ textarea {
   padding-bottom: 30px;
   border-top: none;
   background-color: var(--white-color);
+  max-width: 450px;
 }
 
 .team__title {
