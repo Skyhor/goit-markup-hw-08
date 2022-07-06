@@ -2,13 +2,18 @@
     background-color: #F5F4FA;
 }
 
- .team__card {
-         padding-top: 30px;
-         padding-bottom: 30px;
-         border-top: none;
-         background-color: var(--white-color);
-         max-width: 450px;
-     }
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: none;
+    background-color: var(--white-color);
+}
+
  .team__title {
          font-weight: 500;
          font-size: 16px;
@@ -27,7 +32,6 @@
          letter-spacing: 0.03em;
          color: var(--contact-color)
      }
-
 
 // .section__other-background {
 //     background-color: #F5F4FA;

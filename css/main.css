@@ -833,12 +833,16 @@ textarea {
   background-color: #F5F4FA;
 }
 
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .team__card {
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: none;
   background-color: var(--white-color);
-  max-width: 450px;
 }
 
 .team__title {
