@@ -24,10 +24,6 @@
   letter-spacing: 0.02em;
   color: var(--contact-color);
 }
-.footer-social {
-  text-align: center;
-  margin-top: 60px;
-}
 
 .footer-social__icon {
   width: 44px;
@@ -85,15 +81,109 @@
   height: 24px;
 }
 
+@media screen and(min-width:1200px) {
+  .footer {
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  .footer-nav {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+  .footer-adres__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contact-color);
+  }
+
+  .footer-social__list {
+    display: flex;
+  }
+
+  .footer-social__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .footer-subscribe {
+    margin-left: 93px;
+  }
+
+  .btn-sub {
+    margin-left: 12px;
+  }
+
+  .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-mail {
+    width: 358px;
+    margin: 0;
+  }
+
+  .icon-footer-sub {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and(min-width:768px) and(max-width:1199px) {
+  .footer {
+    padding: 60px 0;
+    background: #2f303a;
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-social__list {
+      display: flex;
+    }
+  }
+  .footer-nav {
+    width: 154px;
+    margin-left: 76px;
+    flex-grow: 1;
+  }
+  .footer-social {
+    width: 206px;
+    margin-right: 89px;
+    text-align: center;
+  }
+
+  .footer-subscribe {
+    width: 450px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .btn-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and(max-width:767px) {
   .footer-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .footer-subscribe {
-    text-align: center;
-    margin-top: 60px;
   }
 
   .footer-social__list {
@@ -106,6 +196,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer-subscribe {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .footer-social {
+    margin-top: 60px;
+    text-align: center;
   }
 }
 
