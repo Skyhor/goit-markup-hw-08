@@ -677,58 +677,44 @@ textarea {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  max-height: 600px;
   text-align: center;
   background-color: #c4c4c4;
+  max-width: 1600px;
+  height: 400px;
+  background-image: url(../../img/Hero/mobile-img.jpg);
+  padding: 118px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1200px;
-    height: 400px;
-    background-image: url("../../img/Hero/desktop-img.jpg");
-    background-size: 1600px 600px;
-    padding: 200px 0;
-  }
-}
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/Hero/desktop-img@2x.jpg");
-    background-size: 3200px 1200px;
+    background-image: url(../../img/Hero/mobile-img@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
-    height: 400px;
-    background-image: url("../../img/Hero/tablet-img.jpg");
-    background-size: 768px 400px;
+    background-image: url(../../img/Hero/tablet-img.jpg);
     padding: 118px 0;
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/Hero/tablet-img@2x.jpg");
+    background-image: url(../../img/Hero/tablet-img@2x.jpg);
     background-size: 1536px 800px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    width: 480px;
-    height: 400px;
-    background-image: url("../../img/Hero/mobile-img.jpg");
-    background-size: 480px 400px;
-    padding: 118px 0;
+    padding: 200px 0;
+    height: 600px;
+    background-image: url(../../img/Hero/desktop-img.jpg);
   }
 }
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/Hero/mobile-img@2x.jpg");
-    background-size: 960px 800px;
+    background-image: url(../../img/Hero/desktop-img@2x.jpg);
   }
 }
 .hero__title {
