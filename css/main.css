@@ -75,7 +75,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -532,9 +532,6 @@ textarea {
     fill: currentColor;
     margin-bottom: 10px;
   }
-  .menu-nav__item:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu-button {
@@ -542,7 +539,7 @@ textarea {
   }
 
   .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #ececec;
   }
 
   .navigation {
@@ -598,7 +595,7 @@ textarea {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #188CE8;
+    background-color: #188ce8;
   }
 
   .menu-nav__link {
@@ -653,7 +650,7 @@ textarea {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #188CE8;
+    background-color: #188ce8;
   }
 
   .menu-nav {
@@ -689,18 +686,19 @@ textarea {
   background-repeat: no-repeat;
 }
 
-.hero {
-  width: 480px;
-  height: 400px;
-  background-image: url("../../img/Hero/mobile-img.jpg");
-  background-size: 480px 400px;
-  padding: 118px 0;
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 400px;
+    background-image: url("../../img/Hero/desktop-img.jpg");
+    background-size: 1600px 600px;
+    padding: 200px 0;
+  }
 }
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/Hero/mobile-img@2x.jpg");
-    background-size: 960px 800px;
+    background-image: url("../../img/Hero/desktop-img@2x.jpg");
+    background-size: 3200px 1200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -718,19 +716,19 @@ textarea {
     background-size: 1536px 800px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .hero {
-    width: 1200px;
+    width: 480px;
     height: 400px;
-    background-image: url("../../img/Hero/desktop-img.jpg");
-    background-size: 1600px 600px;
-    padding: 200px 0;
+    background-image: url("../../img/Hero/mobile-img.jpg");
+    background-size: 480px 400px;
+    padding: 118px 0;
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/Hero/desktop-img@2x.jpg");
-    background-size: 3200px 1200px;
+    background-image: url("../../img/Hero/mobile-img@2x.jpg");
+    background-size: 960px 800px;
   }
 }
 .hero__title {
@@ -825,6 +823,7 @@ textarea {
   .advantages {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .advantages__title {
@@ -984,7 +983,6 @@ textarea {
 }
 
 .client__item {
-  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 .client__item:nth-child(odd) {
