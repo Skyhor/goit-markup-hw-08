@@ -1,3 +1,16 @@
+.hero__title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -10,13 +23,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../../img/Hero/mobile-img@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../img/Hero/mobile-img@2x.jpg);
+    }
   }
 }
 
@@ -25,14 +37,13 @@
     background-image: url(../../img/Hero/tablet-img.jpg);
     padding: 118px 0;
   }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../../img/Hero/tablet-img@2x.jpg);
-    background-size: 1536px 800px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../img/Hero/tablet-img@2x.jpg);
+      background-size: 1536px 800px;
+    }
   }
 }
 
@@ -42,12 +53,18 @@
     height: 600px;
     background-image: url(../../img/Hero/desktop-img.jpg);
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../../img/Hero/desktop-img@2x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../img/Hero/desktop-img@2x.jpg);
+    }
+  }
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -93,19 +110,6 @@
 //                 url(../../img/Hero/desktop-img@2x.jpg);
 //         }
 // }
-
-.hero__title {
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 26px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
 
 .hero__button {
   margin-left: auto;
