@@ -977,7 +977,6 @@ textarea {
 }
 
 .client__item {
-  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 .client__item:nth-child(odd) {

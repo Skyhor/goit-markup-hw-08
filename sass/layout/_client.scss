@@ -33,7 +33,6 @@
   justify-content: center;
 }
 .client__item {
-  width: calc((100% - 30px) / 2);
   height: 92px;
   &:nth-child(odd) {
     margin-right: 30px;
