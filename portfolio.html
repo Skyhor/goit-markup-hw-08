@@ -30,12 +30,12 @@
           </a>
           <ul class="menu">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link "
-                >Студия</a
-              >
+              <a href="./index.html" class="menu__link">Студия</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link menu-link__current">Портфолио</a>
+              <a href="./portfolio.html" class="menu__link menu-link__current"
+                >Портфолио</a
+              >
             </li>
             <li class="menu__item">
               <a href="" class="menu__link">Контакты</a>
@@ -96,7 +96,11 @@
             <a href="./index.html" class="modal-mobile__link">Студия</a>
           </li>
           <li class="modal-mobile__item">
-            <a href="./portfolio.html" class="modal-mobile__link   modal-mobile__link-current">Портфолио</a>
+            <a
+              href="./portfolio.html"
+              class="modal-mobile__link modal-mobile__link-current"
+              >Портфолио</a
+            >
           </li>
           <li class="modal-mobile__item">
             <a href="" class="modal-mobile__link">Контакты</a>
@@ -140,7 +144,7 @@
     </div>
     <!--Content  -->
     <main>
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio-filter">
@@ -166,19 +170,69 @@
               <button type="button" class="portfolio-hero-button">
                 Маркетинг
               </button>
-             </li> -->
+            </li>
             <!-- Card -->
-          <!-- </ul>
-          <ul class="list portfolio-content">
+          </ul>
+          <ul class="portfolio-content">
             <li class="portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-1.png"
-                    width="370"
-                    height="294"
-                    alt="страница браузера"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img.webp    1x,
+                        ./img/portfolio-desktop/img@2x.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img.jpg    1x,
+                        ./img/portfolio-desktop/img@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img1.webp    1x,
+                        ./img/portfolio-tablet/img@2x1.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img1.jpg    1x,
+                        ./img/portfolio-tablet/img@2x1.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img1.webp    1x,
+                        ./img/portfolio-mobile/img@2x1.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img1.jpg    1x,
+                        ./img/portfolio-mobile/img@2x1.jpg 2x
+                      "
+                    />
+
+                    <img
+                      src="./img/photohw2/img-hw2-1.png"
+                      alt="страница браузера"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -198,12 +252,64 @@
             <li class="portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-2.png"
-                    width="370"
-                    height="294"
-                    alt="баскетбол"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img2.webp    1x,
+                        ./img/portfolio-desktop/img@2x2.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img2.jpg    1x,
+                        ./img/portfolio-desktop/img@2x2.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img2.webp    1x,
+                        ./img/portfolio-tablet/img@2x2.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img2.jpg    1x,
+                        ./img/portfolio-tablet/img@2x2.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img2.webp    1x,
+                        ./img/portfolio-mobile/img@2x2.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img2.jpg    1x,
+                        ./img/portfolio-mobile/img@2x2.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-2.png"
+                      width="370"
+                      height="294"
+                      alt="баскетбол"
+                    />
+                  </picture>
+
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -224,12 +330,63 @@
             <li class="portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-3.png"
-                    width="370"
-                    height="294"
-                    alt="логотип ресторана"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img3.webp    1x,
+                        ./img/portfolio-desktop/img@2x3.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img3.jpg    1x,
+                        ./img/portfolio-desktop/img@2x3.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img3.webp    1x,
+                        ./img/portfolio-tablet/img@2x3.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img3.jpg    1x,
+                        ./img/portfolio-tablet/img@2x3.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img3.webp    1x,
+                        ./img/portfolio-mobile/img@2x3.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img3.jpg    1x,
+                        ./img/portfolio-mobile/img@2x3.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-3.png"
+                      width="370"
+                      height="294"
+                      alt="логотип ресторана"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -248,12 +405,63 @@
             <li class="content-list portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-4.png"
-                    width="370"
-                    height="294"
-                    alt="Наушники"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img4.webp    1x,
+                        ./img/portfolio-desktop/img@2x4.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img4.jpg    1x,
+                        ./img/portfolio-desktop/img@2x4.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img4.webp    1x,
+                        ./img/portfolio-tablet/img@2x4.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img4.jpg    1x,
+                        ./img/portfolio-tablet/img@2x4.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img4.webp    1x,
+                        ./img/portfolio-mobile/img@2x4.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img4.jpg    1x,
+                        ./img/portfolio-mobile/img@2x4.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-4.png"
+                      width="370"
+                      height="294"
+                      alt="Наушники"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -272,12 +480,63 @@
             <li class="content-list portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-5.png"
-                    width="370"
-                    height="294"
-                    alt="Проект Boxes"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img5.webp    1x,
+                        ./img/portfolio-desktop/img@2x5.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img5.jpg    1x,
+                        ./img/portfolio-desktop/img@2x5.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img5.webp    1x,
+                        ./img/portfolio-tablet/img@2x5.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img5.jpg    1x,
+                        ./img/portfolio-tablet/img@2x5.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img5.webp    1x,
+                        ./img/portfolio-mobile/img@2x5.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img5.jpg    1x,
+                        ./img/portfolio-mobile/img@2x5.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-5.png"
+                      width="370"
+                      height="294"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -296,12 +555,63 @@
             <li class="content-list portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-6.png"
-                    width="370"
-                    height="294"
-                    alt="Веб-сайт"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img6.webp    1x,
+                        ./img/portfolio-desktop/img@2x6.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img6.jpg    1x,
+                        ./img/portfolio-desktop/img@2x6.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img6.webp    1x,
+                        ./img/portfolio-tablet/img@2x6.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img6.jpg    1x,
+                        ./img/portfolio-tablet/img@2x6.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img6.webp    1x,
+                        ./img/portfolio-mobile/img@2x6.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img6.jpg    1x,
+                        ./img/portfolio-mobile/img@2x6.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-6.png"
+                      width="370"
+                      height="294"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -320,12 +630,63 @@
             <li class="content-list portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-7.png"
-                    width="370"
-                    height="294"
-                    alt="Издание Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img7.webp    1x,
+                        ./img/portfolio-desktop/img@2x7.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img7.jpg    1x,
+                        ./img/portfolio-desktop/img@2x7.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img7.webp    1x,
+                        ./img/portfolio-tablet/img@2x7.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img7.jpg    1x,
+                        ./img/portfolio-tablet/img@2x7.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img7.webp    1x,
+                        ./img/portfolio-mobile/img@2x7.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img7.jpg    1x,
+                        ./img/portfolio-mobile/img@2x7.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-7.png"
+                      width="370"
+                      height="294"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -344,12 +705,63 @@
             <li class="content-list portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-8.png"
-                    width="370"
-                    height="294"
-                    alt="Проект LAB"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img8.webp    1x,
+                        ./img/portfolio-desktop/img@2x8.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img8.jpg    1x,
+                        ./img/portfolio-desktop/img@2x8.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img8.webp    1x,
+                        ./img/portfolio-tablet/img@2x8.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img8.jpg    1x,
+                        ./img/portfolio-tablet/img@2x8.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img28.webp   1x,
+                        ./img/portfolio-mobile/img@2x8.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img8.jpg    1x,
+                        ./img/portfolio-mobile/img@2x8.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-8.png"
+                      width="370"
+                      height="294"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -368,12 +780,63 @@
             <li class="content-list portfolio-header-photo">
               <a href="" class="portfolio-link">
                 <div class="portfolio-card-visual">
-                  <img
-                    src="./img/photohw2/img-hw2-9.png"
-                    width="370"
-                    height="294"
-                    alt="Growing Business"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img9.webp    1x,
+                        ./img/portfolio-desktop/img@2x9.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio-desktop/img9.jpg    1x,
+                        ./img/portfolio-desktop/img@2x9.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img9.webp    1x,
+                        ./img/portfolio-tablet/img@2x9.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio-tablet/img9.jpg    1x,
+                        ./img/portfolio-tablet/img@2x9.jpg 2x
+                      "
+                    />
+
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img9.webp    1x,
+                        ./img/portfolio-mobile/img@2x9.webp 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio-mobile/img9.jpg    1x,
+                        ./img/portfolio-mobile/img@2x9.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./img/photohw2/img-hw2-9.png"
+                      width="370"
+                      height="294"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <div class="portfolio-text-fon">
                     <p class="text-in-card">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -391,8 +854,9 @@
             </li>
           </ul>
         </div>
-      </section> 
-    </main> -->
+      </section>
+    </main>
+    -->
     <!-- Footer -->
     <!-- <footer class="footer">
       <div class="container">
