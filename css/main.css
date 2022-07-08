@@ -353,15 +353,19 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 580px;
   padding: 40px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .button-modal-send {
@@ -369,7 +373,7 @@ body {
   align-self: center;
   margin-top: 30px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--accent-color);
   cursor: pointer;
   border: none;
@@ -377,13 +381,18 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-modal-send:hover, .button-modal-send:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .form-in-modal {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .form-in-modal {
+    width: 100%;
+  }
 }
 
 .modal-title {
@@ -440,7 +449,11 @@ textarea {
 
 .form-in-modal__list {
   position: relative;
-  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .form-in-modal__list {
+    margin-bottom: 4px;
+  }
 }
 
 .form-in-modal__icon {
@@ -463,13 +476,15 @@ textarea {
 .checkbox-agrre {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   font-family: "Roboto";
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 767px) {
+  .checkbox-agrre {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .checkbox-agrre::before {
   content: "";
@@ -486,7 +501,7 @@ textarea {
   border: none;
 }
 .checkbox:focus + .checkbox-agrre::before {
-  outline: 1px solid #188CE8;
+  outline: 1px solid #188ce8;
 }
 
 .header__container {
