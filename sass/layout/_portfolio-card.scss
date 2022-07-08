@@ -52,7 +52,11 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+    .portfolio-card {
+      height: 146px;
+    }
   }
+
   //   &:not(:nth-last-child(- n + 2)) {
   //     // margin-bottom: 30px;
   //   }

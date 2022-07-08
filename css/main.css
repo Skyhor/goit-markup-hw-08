@@ -1305,6 +1305,9 @@ textarea {
   .portfolio-header-photo:not(:last-child) {
     margin-bottom: 30px;
   }
+  .portfolio-header-photo .portfolio-card {
+    height: 146px;
+  }
 }
 .portfolio-card-visual {
   position: relative;
