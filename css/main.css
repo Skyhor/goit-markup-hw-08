@@ -361,9 +361,19 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .modal {
     width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
   }
 }
 
@@ -448,10 +458,11 @@ textarea {
 
 .form-in-modal__list {
   position: relative;
+  margin-bottom: 4px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .form-in-modal__list {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
   }
 }
 
@@ -476,13 +487,15 @@ textarea {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
   color: #757575;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .checkbox-agrre {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
   }
 }
 .checkbox-agrre::before {

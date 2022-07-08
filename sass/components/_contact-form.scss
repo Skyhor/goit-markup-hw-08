@@ -18,9 +18,10 @@ textarea {
 
 .form-in-modal__list {
   position: relative;
-  //   margin-bottom: 10px;
-  @media screen and(max-width:767px) {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 10px;
   }
 }
 
@@ -47,17 +48,15 @@ textarea {
   align-items: center;
   // justify-content: center;
   flex-wrap: wrap;
-  font-family: "Roboto";
-  //   font-size: 14px;
-  //   line-height: 24px;
-  //   letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 14px;
   color: #757575;
 
-  @media screen and(max-width:767px) {
-    font-size: 12px;
-    line-height: 14px;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
   }
-
   &::before {
     content: "";
     display: block;
