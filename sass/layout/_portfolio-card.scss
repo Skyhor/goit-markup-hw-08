@@ -29,6 +29,9 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+.portfolio-image {
+  width: 100%;
+}
 @media screen and(max-width:767px) {
   .portfolio-header-photo {
     margin-right: 0;
@@ -46,8 +49,13 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+  }
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     .portfolio-card {
-      height: 146px;
+      flex-grow: 1;
     }
   }
 }

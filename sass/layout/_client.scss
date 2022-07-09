@@ -33,8 +33,10 @@
   &:nth-child(odd) {
     margin-right: 30px;
   }
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
+  @media screen and(max-width:767px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
   }
 }
 

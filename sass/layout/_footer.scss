@@ -150,20 +150,16 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      align-items: baseline;
+      text-align: center;
     }
 
     .footer-social__list {
       display: flex;
     }
   }
-  .footer-nav {
-    width: 154px;
-    margin-left: 76px;
-    flex-grow: 1;
-  }
+
   .footer-social {
-    width: 206px;
-    margin-right: 89px;
     text-align: center;
   }
 
@@ -180,9 +176,12 @@
 
 @media screen and(max-width:767px) {
   .footer-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+  }
+  .footer-adres__list {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 
   .footer-social__list {
