@@ -1156,6 +1156,10 @@ textarea {
     color: var(--contact-color);
   }
 
+  .footer-adres__list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
   .footer-social__list {
     display: flex;
   }
@@ -1196,10 +1200,6 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    padding: 60px 0;
-    background: #2f303a;
-  }
   .footer .container {
     display: flex;
     justify-content: space-around;
